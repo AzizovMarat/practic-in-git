@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="lastAction" alignment="CENTER_RIGHT" disable="true" prefHeight="25.0" prefWidth="330.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="workSpace" alignment="CENTER_RIGHT" disable="true" prefHeight="25.0" prefWidth="330.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="\%" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnCE" onAction="#click" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="CE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnC" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="C" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnBackSpace" onAction="#click" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="&lt;-" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children></HBox>
+      <HBox layoutX="10.0" layoutY="35.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="1/x" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnSQR" onAction="#click" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="x^2" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnSQRT" onAction="#click" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="sqrt x" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnDivide"  onAction="#click" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="\\" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="222.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btn7" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="7" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btn8" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="8" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btn9" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="9" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnMultiply" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="*" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="285.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btn4" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="4" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btn5" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="5" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btn6" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="6" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnMinus" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="-" onAction="#click" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="317.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btn1" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="1" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btn2" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="2" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btn3" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="3" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnPlus" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="+" onAction="#click" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="335.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" text="+/-" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btn0" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="0" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnPoint" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="," HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnEqual" maxHeight="1.7976931348623157E308" maxWidth="80.0" mnemonicParsing="false" onAction="#click" text="=" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
